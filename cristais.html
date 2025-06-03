@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cristais | Crystal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    .header {
+      background-color: #3D1374;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 17px;
+      color: #f7f5f8;
+      transition: all 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #C8A4EF;
+    }
+
+    .cristais-container {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cristais-container h1 {
+      font-size: 36px;
+      text-align: center;
+      color: #3D1374;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .cristais-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .cristal-card {
+      border: 0px solid #eee;
+      border-radius: 0px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .cristal-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .cristal-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 0px;
+      margin-bottom: 15px;
+    }
+
+    .cristal-card h3 {
+      font-size: 20px;
+      color: #3D1374;
+      margin: 10px 0 5px;
+    }
+
+    .cristal-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .footer {
+      background-color: #faf7fc;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 60px;
+      border-top: 1px solid #eceaea;
+    }
+
+    .footer-left {
+      max-width: 360px;
+    }
+
+    .footer-left img {
+      width: 90px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      color: #8b8b8b;
+      margin-top: 12px;
+    }
+
+    .footer-columns {
+      display: flex;
+      gap: 60px;
+    }
+
+    .footer-col h4 {
+      font-size: 15px;
+      color: #3D1374;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .footer-col p {
+      font-size: 14px;
+      color: #6f6f6f;
+      margin: 6px 0;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .footer-col p:hover {
+      color: #8D65C2;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="crystal/CrystalBRANCO.png" alt="Logo Crystal" class="logo" />
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="cristais.html">Cristais</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="cristais-container">
+    <h1>Nossos Cristais</h1>
+    <div class="cristais-grid">
+
+      <div class="cristal-card">
+        <img src="crystal/ametista.png" alt="Ametista">
+        <h3>Ametista</h3>
+        <p>Conhecida por trazer calma, equilíbrio e clareza mental. Ideal para meditação e proteção espiritual.</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/quartzorosa.png" alt="Quartzo Rosa">
+        <h3>Quartzo Rosa</h3>
+        <p>O cristal do amor e da compaixão. Promove autoestima, cura emocional e harmonia nos relacionamentos.</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/quartzotransparente.png" alt="Quartzo Transparente">
+        <h3>Quartzo Transparente</h3>
+        <p>Potencializa a energia de outros cristais e traz clareza mental e purificação</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/calcitamel.png" alt="Calcita Mel">
+        <h3>Calcita Mel</h3>
+        <p>Com sua energia suave e calorosa, a calcita mel é ideal para estimular a autoestima, trazer clareza mental e renovar a motivação.</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/quartzoverde.png" alt="Quartzo Verde">
+        <h3>Quartzo Verde</h3>
+        <p>Ligado à saúde e bem-estar, o quartzo verde simboliza equilíbrio, vitalidade e renovação. É associado à natureza e à recuperação física.</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/onix.png" alt="Ônix">
+        <h3>Ônix</h3>
+        <p>Protetor e enraizador, o ônix é conhecido por afastar energias negativas, fortalecer a autoconfiança e trazer estabilidade emocional.</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/lapislazuli.png" alt="Lápis Lazúli">
+        <h3>Lápis Lazúli</h3>
+        <p>Místico e profundo, o lápis-lazúli estimula a sabedoria, a clareza mental e a expressão da verdade.</p>
+      </div>
+
+      <div class="cristal-card">
+        <img src="crystal/olhodetigre.png" alt="Ônix">
+        <h3>Olho de Tigre</h3>
+        <p>Forte e estimulante, o olho de tigre desperta a coragem, protege contra energias negativas e fortalece a força de vontade.</p>
+      </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="crystal/CrystalROXO.png" alt="Logo Crystal Roxo">
+      <p>© 2025 Crystal. Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Sobre nós</h4>
+        <p>Nossa missão</p>
+        <p>Quem somos</p>
+        <p>Blog</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suporte</h4>
+        <p>Perguntas frequentes</p>
+        <p>Fale conosco</p>
+        <p>Política de privacidade</p>
+      </div>
+      <div class="footer-col">
+        <h4>Redes sociais</h4>
+        <p>Instagram</p>
+        <p>TikTok</p>
+        <p>Facebook</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: white;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 725px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .header {
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 20px; 
+      margin-right: 400px;
+      top: 0;
+      left: 0;
+      width: 96%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      color: #eeecef;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #8D65C2;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-logo {
+      width: 350px;
+      height: auto;
+      margin-bottom: -5px;
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: #3D1374;
+      color: white;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 0px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #8D65C2;
+    }
+
+    .main {
+      padding: 60px 40px;
+    }
+
+    .cristal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+      gap: 40px;
+    }
+
+    .cristal.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .cristal-text {
+      flex: 1;
+    }
+
+    .cristal-text h2 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #3D1374;
+    }
+
+    .cristal-text p {
+      font-size: 18px;
+      color: #828282;
+      font-weight: 400;
+      margin: 20px 0;
+    }
+
+    .cristal img {
+      width: 650px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #3D1374;
+      text-align: center;
+      margin: 80px 0 40px;
+    }
+
+    .mais-cristais {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .cristal-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 0px;
+    }
+
+    .cristal-card h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: #3D1374;
+      margin-top: 15px;
+    }
+
+    .cristal-card p {
+      font-size: 16px;
+      color: #828282;
+    }
+
+    .footer {
+      background-color: #faf7fc;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 60px;
+      border-top: 1px solid #eceaea;
+    }
+
+    .footer-left {
+      max-width: 360px;
+    }
+
+    .footer-left img {
+      width: 90px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      color: #8b8b8b;
+      margin-top: 12px;
+    }
+
+    .footer-columns {
+      display: flex;
+      gap: 60px;
+    }
+
+    .footer-col h4 {
+      font-size: 15px;
+      color: #3D1374;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .footer-col p {
+      font-size: 14px;
+      color: #6f6f6f;
+      margin: 6px 0;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .footer-col p:hover {
+      color: #8D65C2;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="crystal/FundoPrincipal.png" alt="Fundo de cristais" class="hero-bg" />
+    <header class="header">
+      <img src="crystal/CrystalROXO.png" alt="Logo Crystal" class="logo" />
+      <nav class="nav">
+        <a href="#">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="cristais.html">Cristais</a>
+        <a href="contato.html">Contato</a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </nav>
+    </header>
+    <div class="hero-content">
+      <img src="crystal/CrystalBRANCO.png" alt="Crystal" class="hero-logo" />
+      <p class="hero-subtitle">Tudo sobre cristais e seus significados, sem mistérios.</p>
+      <a href="#" class="btn">→ Ver todos os cristais</a>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="cristal">
+      <div class="cristal-text">
+        <h2>Ametista</h2>
+        <p>Calmante e espiritual, a ametista é conhecida por equilibrar a mente, afastar pensamentos negativos e fortalecer a intuição.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+      <img src="crystal/ametista.png" alt="Ametista">
+    </div>
+
+    <div class="cristal reverse">
+      <div class="cristal-text">
+        <h2>Quartzo Rosa</h2>
+        <p>O cristal do amor. Traz harmonia emocional, autoestima e fortalece relações afetivas – inclusive o amor-próprio.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+      <img src="crystal/quartzorosa.png" alt="Quartzo Rosa">
+    </div>
+
+    <div class="cristal">
+      <div class="cristal-text">
+        <h2>Quartzo Transparente</h2>
+        <p>Potencializa a energia de outros cristais e traz clareza mental e purificação.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+      <img src="crystal/quartzotransparente.png" alt="Quartzo Transparente">
+    </div>
+
+    <h2 class="section-title">Mais cristais</h2>
+    <div class="mais-cristais">
+      <div class="cristal-card">
+        <img src="crystal/calcitamel.png" alt="Calcita Mel">
+        <h3>Calcita Mel</h3>
+        <p>Com sua energia suave e calorosa, a calcita mel é ideal para estimular a autoestima, trazer clareza mental e renovar a motivação.</p>
+      </div>
+      <div class="cristal-card">
+        <img src="crystal/quartzoverde.png" alt="Quartzo Verde">
+        <h3>Quartzo Verde</h3>
+        <p>Ligado à saúde e bem-estar, o quartzo verde simboliza equilíbrio, vitalidade e renovação. É associado à natureza e à recuperação física.</p>
+      </div>
+      <div class="cristal-card">
+        <img src="crystal/onix.png" alt="Ônix">
+        <h3>Ônix</h3>
+        <p>Protetor e enraizador, o ônix é conhecido por afastar energias negativas, fortalecer a autoconfiança e trazer estabilidade emocional.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="crystal/CrystalROXO.png" alt="Logo Crystal Roxo">
+      <p>© 2025 Crystal. Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Sobre nós</h4>
+        <p>Nossa missão</p>
+        <p>Quem somos</p>
+        <p>Blog</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suporte</h4>
+        <p>Perguntas frequentes</p>
+        <p>Fale conosco</p>
+        <p>Política de privacidade</p>
+      </div>
+      <div class="footer-col">
+        <h4>Redes sociais</h4>
+        <p>Instagram</p>
+        <p>TikTok</p>
+        <p>Facebook</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
